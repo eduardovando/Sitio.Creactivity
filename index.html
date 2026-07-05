@@ -1,0 +1,149 @@
+html_content = """<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Proyecto Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. MENÚ SUPERIOR -->
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="imagenes/Logo_top_crea.png" alt="Logo Gautham Mukesh">
+        </a>
+        <ul class="nav-links">
+                     <li><a href="#">Process</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="btn-contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" onclick="toggleMobileMenu()">+</button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#" class="active">Project</a></li>
+            <li><a href="#">Process</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <main class="main-layout">
+        <div class="timeline-axis"></div>
+        <div class="content-container">
+            <!-- SECCIÓN 1: BIOGRAFÍA / INICIO -->
+            <div class="section-wrapper">
+                <div class="axis-icon">
+                    <img src="imagenes/img_icono_A.png" alt="Icono A">
+                </div>
+                <div class="hero-grid">
+                    <div class="bento-card card-profile">
+                        <h1>Creactivity</h1>
+                        <p>Es una iniciativa inspirada en el Arte &quot;todos los niños son artristas&quot; Aprovechando estas cualidades humanas las conectamos con habilidades académicas.</p>
+                    </div>
+                    <div class="bento-card card-main-img">
+                        <img src="imagenes/img_Inicio.png" alt="Ilustración Principal de Inicio">
+                    </div>
+                    <div class="bento-card card-status">
+                        <div class="status-top">
+                            <h3>En este momneto</h3>
+                            <p>IEstamos lanzando nuestro material de prueba gratis para aprender piano.</p>
+                        </div>
+                        <div class="niche-section">
+                            <h4>Habilidades</h4>
+                            <div class="niche-tags">
+                                <span class="tag">Musicales</span>
+                                <span class="tag">Inteligancia emocional</span>
+                                <span class="tag">Storytelling</span>
+                                <span class="tag">Pensamiento Crítico</span>
+                                <span class="tag">Artísticas</span>
+                                <span class="tag">Conciencia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 2: PROCESS & PLAYGROUND -->
+            <div class="section-wrapper">
+                <div class="axis-icon">
+                    <img src="imagenes/img_icono_B.png" alt="Icono B">
+                </div>
+                <div class="process-grid">
+                    <div class="bento-card card-process">
+                        <h3>QUÉ ES LO QUE BUSCAMOS</h3>
+                        <p>Un mejor mundo es el reflejo de  niños, concsientes, bien educados y preocupados por los problemas ambientales y sociales.</p>
+                    </div>
+                    <div class="bento-card card-playground">
+                        <h2>Ejemplos</h2>
+                        <div class="playground-gallery">
+                            <div class="pg-large">
+                                <img src="imagenes/img_reel_A.png" alt="Reel A">
+                            </div>
+                            <div class="pg-small">
+                                <img src="imagenes/img_reel_B.png" alt="Reel B">
+                            </div>
+                            <div class="pg-small">
+                                <img src="imagenes/img_reel_C.png" alt="Reel C">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3: CONTACTO -->
+            <div class="section-wrapper">
+                <div class="axis-icon">
+                    <img src="imagenes/img_icono_C.png" alt="Icono C">
+                </div>
+                <div class="contact-grid">
+                    <div class="bento-card card-collaborate">
+                        <h3>te gustaría obtener mas informaciÓN</h3>
+                        <p>Escríbenos estamos ansiosos de que tus alumnos, hijos o pacientes prueben este metodo experimental.</p>
+                    </div>
+                    <div class="bento-card card-form">
+                        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Formulario enviado con éxito!');">
+                            <div class="form-row">
+                                <input type="text" placeholder="Name*" required>
+                                <input type="email" placeholder="Email*" required>
+                            </div>
+                            <textarea placeholder="Project details (Optional)" rows="4"></textarea>
+                            <div class="form-actions">
+                                <span class="form-email-info">eduardovando@gmail.com</span>
+                                <button type="submit" class="btn-submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="imagenes/Logo_bottom_crea.png" alt="Logo Inferior">
+        </div>
+        <ul class="footer-links">
+            <li><a href="#">Process</a></li>
+            <li><a href="play.html">Play</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById('mobileMenu');
+            var button = document.querySelector('.menu-toggle');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+                button.innerText = '+';
+            } else {
+                menu.style.display = 'block';
+                button.innerText = '×';
+            }
+        }
+    </script>
+</body>
+</html>
