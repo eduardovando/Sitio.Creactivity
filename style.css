@@ -368,14 +368,14 @@ body {
 }
 
 .btn-submit {
-    background-color: #2e1a1c;
-    color: white;
-    border: none;
-    padding: 12px 35px;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: pointer;
+	background-color: #1022E9;
+	color: white;
+	border: none;
+	padding: 12px 35px;
+	border-radius: 25px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
 }
 
 /* --- FOOTER --- */
